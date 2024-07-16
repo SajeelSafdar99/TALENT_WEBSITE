@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slide-progress {
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -110px;
+    z-index: 3;
+    text-align: center;
+}
+.slide-progress span {
+    display: inline-block;
+    color: #fff;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 14px;
+}
+
+
+

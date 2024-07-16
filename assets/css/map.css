@@ -1,0 +1,30 @@
+#map {
+    width: 100%;
+    height: 684px; /* Setting height */
+    text-align: center; /* Center align content */
+    font-family: 'Barlow', sans-serif; /* Setting font family */
+}
+
+.map-header {
+    margin-top: 57px; /* Top margin of 57px */
+}
+
+.map-header h2 {
+    font-weight: 600;
+    font-size: 2rem; /* Adjust font size as needed */
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,163 @@
+/* Base styles for nav links */
+.navbar {
+    background-color: #F9F9F9;
+    height: 70px;
+}
+
+.navbar-brand {
+    margin-left: 5%;
+}
+
+.nav-link {
+    padding: 0;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1px; /* Add some padding to create space between text and underline */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #0D97E9;
+}
+
+li.nav-item {
+    margin-left: 25px;
+}
+
+/* Adjust dropdown menu styles */
+.dropdown-menu[data-bs-popper] {
+    top: 145% !important; /* Ensure dropdown appears below trigger */
+    margin-top: 0; /* Remove any margin top if not needed */
+    left: auto !important; /* Reset left position */
+    right: 0 !important; /* Position to the right edge */
+}
+
+.border_re {
+    border: 1px solid #DDDDDD;
+    border-radius: 40px;
+    padding: 7px 10px 7px 10px;
+    transition: box-shadow 0.3s ease;
+    background-color: #ffffff;
+
+}
+
+.border_re:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.dropdown-menu {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel-re {
+    border: 1px solid;
+    gap: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0px 20px 0px;
+    background-color: #fff;
+}
+
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.ml input {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ccc;
+}
+.hd-hover:hover,
+.hd-hover:hover input {
+    background-color: #DDDDDD; /* Example background color on hover */
+
+}
+.input-with-icon .icon-button {
+    position: absolute;
+    right: -5px;
+    top: 0%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.input-with-icon .icon-button i {
+    pointer-events: none;
+}
+
+.hd_border::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background-color: #DDDDDD;
+    right: -7px;
+}
+
+.input-with-icon .icon-button:hover {
+    color: #000; /* Change color on hover */
+}
+
+.added_padding {
+
+    border-radius: 40px;
+    padding: 1.5%;
+}
+
+.hd_border {
+    padding-left: 20px;
+
+    border-radius: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+.icon_styling {
+    background-color: #0D97E9;
+    border-radius: 35px;
+    padding: 24px;
+    color: #fff;
+}
+
+.ml {
+    margin-left: 20px;
+}
+.input-with-icon input {
+    width: 50%;
+}
+
+.icon-button {
+    background-color: transparent; /* Or any other background color you want */
+    border: none; /* Remove default button border */
+    padding: 10px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Change cursor to pointer */
+}
+.search_panel{
+    background-color: #f9f9f9;
+}

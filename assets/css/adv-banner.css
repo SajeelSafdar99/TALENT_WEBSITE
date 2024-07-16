@@ -1,0 +1,41 @@
+.ADV_SECTION_BANNER {
+    position: relative; /* Ensure z-index works */
+    z-index: 10; /* Adjust the value based on your needs */
+    margin-top: -41px; /* Keep your existing margin-top value */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    background-color: #0095d9; /* Background color */
+    padding: 24px 0px;
+}
+
+.logo-container img {
+    max-width: 180px; /* Adjust this value based on your needs */
+    max-height: 150px; /* Adjust this value based on your needs */
+    flex: 1 1 auto;
+    mix-blend-mode: luminosity;
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .logo-container img {
+        max-width: 180px; /* Adjusted for smaller screens */
+        max-height: 150px; /* Adjusted for smaller screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo-container img {
+        max-width: 180px; /* Adjusted for medium screens */
+        max-height: 150px; /* Adjusted for medium screens */
+    }
+}

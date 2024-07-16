@@ -1,0 +1,41 @@
+
+.owl-nav button {
+    display: none;
+}
+
+.owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+    width: 7px;
+    height: 7px;
+    background-color: rgba(13, 151, 233, 0.3) !important;
+    border-radius: 6px;
+}
+.owl-dots button.owl-dot.active {
+    background-color: #0D97E9 !important; /* Use !important if needed */
+    padding-right: 25px !important;
+}
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+/*.owl-nav button {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    background: rgba(255, 255, 255, 0.38) !important;*/
+/*}*/
+.owl-nav button:focus {
+    outline: none;
+}
+.owl-item .img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
