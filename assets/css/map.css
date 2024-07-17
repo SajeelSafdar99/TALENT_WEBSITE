@@ -6,12 +6,21 @@
 }
 
 .map-header {
-    margin-top: 57px; /* Top margin of 57px */
+    padding: 35px 0px;
 }
 
-.map-header h2 {
+.venue-heading {
+    font-family: 'Barlow', sans-serif;
     font-weight: 600;
-    font-size: 2rem; /* Adjust font size as needed */
+    font-size: 4vw; /* Base font size responsive to viewport width */
+    line-height: 1.1; /* Base line height for desktop */
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.venue-heading span {
+    font-weight: 600; /* Inherit weight from .venue-heading */
+    color: #0D97E9; /* Set color for the span */
 }
 
 .map-container {

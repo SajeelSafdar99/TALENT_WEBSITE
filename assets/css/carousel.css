@@ -4,17 +4,85 @@
     position: relative;
 }
 
-.progress-bar-container {
-   display: inline-block;
-    width: 200px;
-    height: 3px;
-    /*background-color: #ddd;*/
-    right: 0;
-    /*display: inline-block;*/
-    position: static;
-    background: rgba(255, 255, 255, 0.3);
+
+.carousel-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjust width as needed */
+    z-index: 1; /* Ensure content is above images */
 }
 
+.hero-text {
+    font-family: 'Yantramanav', sans-serif; /* Yantramanav font */
+    font-weight: 500; /* Medium */
+    font-size: 1.3vw; /* Font size based on viewport width */
+    color: #FFCE00;
+    text-transform: uppercase; /* Corrected case for text-transform property */
+    line-height: calc(1.9vw * 0.01);
+    letter-spacing: calc(2vw * 0.08);
+}
+
+
+.hero-heading {
+    font-family: 'Barlow', sans-serif; /* Barlow font */
+    font-weight: 700; /* Bold */
+    font-size: 5.8vw;/* Font size based on viewport width */
+    line-height: 8vw; /* Line height based on viewport width */
+    color: #FFFFFF; /* White color */
+    text-transform: uppercase;
+}
+
+
+.hero-content {
+    color: #ffffff;
+    font-family: 'Yantramanav', sans-serif; /* Yantramanav font */
+    font-weight: 400; /* Normal */
+    font-size: 1.5vw; /* Font size based on viewport width */
+    line-height: 2.3vw; /* Line height based on viewport width */
+}
+
+
+.hero-button {
+    color: white;
+    height: 4.5vw; /* Adjust height based on viewport width */
+    width: 15vw; /* Adjust width based on viewport width */
+    max-width: 400px; /* Limit maximum width */
+    font-size: 1.2vw; /* Adjust font size based on viewport width */
+    background-color: #0b84cb;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    line-height: 4.5vw; /* Adjust line height based on viewport width */
+    cursor: pointer;
+}
+
+/* Example of limiting maximum width */
+@media (max-width: 768px) {
+    .hero-button {
+        font-size: 1.5vw; /* Adjust font size for smaller screens */
+        line-height: 4vw; /* Adjust line height for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-button {
+        font-size: 1.5vw; /* Further adjust font size for even smaller screens */
+        line-height: 3.5vw; /* Further adjust line height for even smaller screens */
+    }
+}
+.bottom-content{
+    margin-left: 20px;
+}
+.slide-progress{
+    margin-right: 20px;
+}
+.scroll-button{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+}
 .progress-bar {
     width: 0;
     transform: translate3d(0px, 0px, 0px) scaleX(1) scaleY(1);
@@ -22,78 +90,36 @@
     height: 100%;
     background-color: #007bff;
 }
-
-.carousel-text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: #fff; /* Adjust the color as needed */
-    z-index: 10;
-    /*font-size: 24px; !* Adjust the font size as needed *!*/
-    /*font-weight: bold; !* Adjust the font weight as needed *!*/
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add some text shadow for better readability */
+.progress-bar-container {
+    display: inline-block;
+    width: 200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
-.hero-heading {
-    font-size: 4.4em;
-    font-weight: bold;
-    line-height: 1;
+.slide-progress span {
+    display: inline-block;
+    color: #fff;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 14px;
+    padding: 10px;
 }
-
-.hero-text{
-    font-size: 1.2em;
-    line-height: 2;
-color: #e8c30b;
-}
-
-.hero-button{
-    color: white;
-    height: 60px;
-    width: 150px;
-    background-color: #0b84cb;
-    border-radius: 6px;
-    border: none;
-}
-
-@media (max-width: 768px) {
-    .hero-heading{
-        font-size: 2em;
-        font-weight: bold;
-        line-height: 1;
-    }
-    .hero-text{
-        font-size: 10px;
-        line-height: 2;
-        color: #e8c30b;
-    }
-    .hero-button{
- font-size: 10px;
-        height: 30px;
-        width: 100px;
-
-    }
+.bottom-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
-@media (max-width: 425px) {
-    .hero-heading{
-        font-size: 1em;
-        font-weight: bold;
-        line-height: 1;
-    }
-    .hero-text{
-        font-size: 6px;
-        line-height: 2;
-        color: #e8c30b;
-    }
-    .hero-content{
-        font-size: 10px
-    }
-    .hero-button{
-        font-size: 8px;
-        height: 30px;
-        width: 90px;
-
+.slide-progress{
+    display: flex;
+    align-items: center;
+}
+.botton-section{
+    bottom: 50px;
+    position: relative;
+}
+@media (max-width: 576px){
+    .botton-section{
+        bottom: 50px;
     }
 }
-
