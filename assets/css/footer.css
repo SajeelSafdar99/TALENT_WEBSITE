@@ -1,0 +1,124 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #1A0D29;
+  position: relative;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid #353535;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  color: #D0D0D0;
+  font-size: 17px;
+  font-family: 'Barlow', 'sans-serif';
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-text h5 {
+    font-family: 'Barlow', 'sans-serif';
+    margin-bottom: 14px;
+    font-size: 20px;
+    color: #D0D0D0;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.footer-text p {
+    font-family: 'Barlow', 'sans-serif';
+    margin-bottom: 14px;
+    font-size: 17px;
+    color: #D0D0D0;
+    line-height: 28px;
+}
+.footer-widget-heading {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Barlow', 'sans-serif';
+  }
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Barlow', 'sans-serif';
+  margin-bottom: 16px;
+}
+.footer-widget1{
+    max-width: 30%;
+}
+.footer-widget p {
+padding-top: 14px;
+}
+.footer-widget h5{
+    color: #FFFFFF;
+    font-size: 21px;
+    font-family: 'Barlow', 'sans-serif';
+}
+.footer-widget ul li {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+  margin: 10px 0px;
+}
+.footer-widget ul li a:hover{
+  color: #FFCE00;
+}
+.footer-widget ul li a {
+  text-decoration: none;
+  color: #878787;
+  text-transform: capitalize;
+}
+.footer-widget ul li i {
+  margin-right: 10px;
+  color: #D0D0D0;
+}
+.copyright-area{
+  background: #1A0D29;
+  padding-top: 18px;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-button {
+  position: relative;
+  left: 80px;
+  bottom: 20px;
+}
+.footer-button button{
+  height: 50px;
+  width: 50px;
+  background-color: #FFCE00;
+}
+
+@media (min-width: 320px) and (max-width: 780px) {
+  .footer-content {
+    justify-content: space-around;
+  }
+  .footer-widget1{
+    max-width: 100%;
+    width: 80%;
+}
+.footer-widget{
+  width: 80%;;
+}
+}
