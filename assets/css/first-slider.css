@@ -2,17 +2,35 @@
 
 
 .slider-heading {
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 10px;
+    font-family: 'DM Sans', sans-serif; /* Ensure DM Sans font is used */
+    font-weight: 700; /* Bold */
+    font-size: 14px; /* Font size */
+    line-height: 18px; /* Line height */
+    letter-spacing: 1.4px; /* Letter spacing */
+    text-align: center; /* Center align text */
+    margin-bottom: 10px; /* Space below the heading */
 }
 
+
 .slider-subheading {
-    text-align: center;
-    font-size: 57px;
-    color: #666; /* Adjust color as needed */
-    margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif; /* Barlow font */
+    font-weight: 600; /* Bold */
+    font-size: 57px; /* Font size */
+    line-height: 57.01px; /* Line height */
+    letter-spacing: -0.6px; /* Letter spacing */
+    text-align: center; /* Center align text */
 }
+
+.slider-subheading span {
+    font-family: 'Barlow', sans-serif; /* Barlow font */
+    font-weight: 600; /* Bold */
+    font-size: 57px; /* Font size */
+    line-height: 57.01px; /* Line height */
+    letter-spacing: -0.6px; /* Letter spacing */
+    text-align: center; /* Center align text */
+    color: #0D97E9;
+}
+
 
 .centered-button {
     display: flex;

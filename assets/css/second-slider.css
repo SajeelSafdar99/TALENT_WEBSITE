@@ -1,4 +1,48 @@
+.OUR_VENUE_SECTION{
+    padding: 40px 0px;
+}
+.slider {
+    text-align: center;
+    padding: 20px;
+}
 
+.slider-heading-1 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14.3px;
+    letter-spacing: 4.55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0D97E9;
+}
+
+.slider-subheading-1 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 59.94px;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.slider-subheading-1 span {
+    color: #0D97E9; /* Specific color for "GUYS" */
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .slider-heading-1 {
+        font-size: 12px;
+        line-height: 12.5px;
+        letter-spacing: 3px;
+    }
+
+    .slider-subheading-1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
 .owl-nav button {
     display: none;
 }

@@ -329,3 +329,36 @@ jQuery("#carousel1").owlCarousel({
         }
     }
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Scroll to the bottom
+    document.getElementById('scrollToBottomButton').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor click behavior
+
+        var bottomElement = document.getElementById('bottom');
+        if (bottomElement) {
+            bottomElement.scrollIntoView({
+                behavior: 'smooth' // Enable smooth scrolling
+            });
+        } else {
+            console.error('Element with ID "bottom" not found.');
+        }
+    });
+
+    // Scroll to the top
+    document.getElementById('scrollToTopButton').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor click behavior
+
+        var topElement = document.getElementById('top');
+        if (topElement) {
+            topElement.scrollIntoView({
+                behavior: 'smooth' // Enable smooth scrolling
+            });
+        } else {
+            console.error('Element with ID "top" not found.');
+        }
+    });
+});

@@ -21,11 +21,14 @@
     <link rel="stylesheet" href="/assets/css/adv-banner.css">
     <link rel="stylesheet" href="assets/css/second-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
 
     <title>Talent</title>
 </head>
 <body>
+<div id="top"></div>
 <nav class="NAVBAR_SECTION">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -117,25 +120,40 @@
             <img src="assets/img/background_banner.png" class="d-block w-100" alt="...">
         </div>
     </div>
-    <div class="slide-progress">
-        <span id="currentSlide" class="">01</span>
-        <div class="progress-bar-container">
-            <div class="progress-bar" id="progressBar"></div>
+
+    <div class="carousel-text-container">
+        <div class="container">
+            <div class="row">
+                <p class="hero-text">Powerful Sport Theme</p>
+                <p class="hero-heading">Win Every Game</p>
+                <p class="hero-content col-xl-6 col-xxl-6 col-md-6 col-sm-12">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+            </div>
+            <button class="hero-button">Download App</button>
         </div>
-        <span id="nextSlide" class="">02</span>
     </div>
-    <div class="carousel-text container">
-        <p class="hero-text">Powerfull Sport Theme</p>
-        <p class="hero-heading">Win Every Game</p>
-        <p class="hero-content">
-            lorem ipsum dolor sit am  lorem ipsum dolor sit am lorem ipsum dolor <br /> sit amlorem ipsum dolor sit amlorem ipsum dolor sit am
-        </p>
-        <button class="hero-button">Download App</button>
+    <div class="botton-section">
+        <div class="bottom-content">
+            <div class="scroll-button">
+                <a href="#bottom" class="scroll-button" id="scrollButton">SCROLL DOWN <span style="content: "\2193";">&#8595;</span>
+                </a>
+
+            </div>
+            <div class="slide-progress">
+                <span id="currentSlide" class="">01</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <span id="nextSlide" class="">02</span>
+            </div>
+        </div>
     </div>
 </div>
 <section class="OUR_VENUE_SECTION container">
     <h2 class="slider-heading">FIND YOUR BEST PLACE</h2>
-    <h3 class="slider-subheading">OUR VENUE</h3>
+    <h3 class="slider-subheading">OUR <span>VENUE</span></h3>
     <div class="owl-slider">
         <div id="carousel1" class="owl-carousel">
             <div class="item">
@@ -235,7 +253,7 @@
 </section>
 <section id="map">
     <div class="map-header">
-        <h2>GET PLAYING TODAY AT A <span style="color: #0D97E9; font-weight: 600;">VENUE NEAR YOU</span></h2>
+        <h2 class="venue-heading">GET PLAYING TODAY AT A <span>VENUE NEAR YOU</span></h2>
     </div>
     <div class="map-container">
         <iframe
@@ -254,18 +272,18 @@
     </div>
 </section>
 <section class="ADV_SECTION_BANNER">
-       <div class="logo-container">
-           <img src="assets/img/banner-img/1.png" alt="Hockey Logo">
-           <img src="assets/img/banner-img/2.png" alt="Power Logo">
-           <img src="assets/img/banner-img/3.png" alt="Football League Logo">
-           <img src="assets/img/banner-img/4.png" alt="Thunder Logo">
-           <img src="assets/img/banner-img/5.png" alt="Iron Gym Logo">
-       </div>
+    <div class="logo-container">
+        <img src="assets/img/banner-img/1.png" alt="Hockey Logo">
+        <img src="assets/img/banner-img/2.png" alt="Power Logo">
+        <img src="assets/img/banner-img/3.png" alt="Football League Logo">
+        <img src="assets/img/banner-img/4.png" alt="Thunder Logo">
+        <img src="assets/img/banner-img/5.png" alt="Iron Gym Logo">
+    </div>
 
 </section>
 <section class="OUR_VENUE_SECTION container">
     <h2 class="slider-heading-1">the best players</h2>
-    <h3 class="slider-subheading-1">our customers and guys</h3>
+    <h3 class="slider-subheading-1">our customers and <span>GUYS</span></h3>
     <div class="owl-slider">
         <div id="carousel" class="owl-carousel">
             <div class="item">
@@ -307,10 +325,27 @@
         </div>
     </div>
 </section>
-
-
-
-
+<section class="gallery">
+    <div class="big-image">
+        <img src="assets/img/gallery-img/1.png" alt="Big Image">
+    </div>
+    <div class="small-images">
+        <div class="small-image">
+            <img src="assets/img/gallery-img/2.png" alt="Small Image 1">
+        </div>
+        <div class="small-image">
+            <img src="assets/img/gallery-img/3.png" alt="Small Image 2">
+        </div>
+        <div class="small-image">
+            <img src="assets/img/gallery-img/4.png" alt="Small Image 3">
+        </div>
+        <div class="small-image">
+            <img src="assets/img/gallery-img/5.png" alt="Small Image 4">
+        </div>
+    </div>
+</section>
+<div id="bottom"></div>
+<a href="#top" class="scroll-button" id="scrollToTopButton">Scroll to Top</a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -322,6 +357,6 @@
 <script src="https://kit.fontawesome.com/016bc10fa4.js" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="js/main-script.js"></script>
-<script type="text/javascript" src="js/slider-script.js"></script>
+
 </body>
-</htm
+</html>
